@@ -17,7 +17,10 @@ We used them on ubuntu following these steps:
 In this part we are focusing just on the code's functionality and breaking the code part by part for detailed explanation 
 ## functions used 
 1. Input function `eval(input('enter text here))` to take input from user 
-2. 
+2. `abs()`	Returns the absolute value of a number
+3. `eval()`	Evaluates and executes an expression
+
+and many more to be explained below
 ## code explanation part by part 
 import these first to start programming   `from roboticstoolbox import Bicycle, RandomPath, VehicleIcon,RangeBearingSensor,LandmarkMap
 from math import pi ,atan2
@@ -61,10 +64,48 @@ To add the range bearing sensor which we will use to find out the distance betwe
 To printout the readings from the sensor. 
 `print('Sensor readings: \n ' , sensor.h(veh.x))`
 
+`run = True
+while(run):
+    for i in sensor.h(veh.x):
+        if i[0] < 3 :
+            if abs(i[1]<pi):
+                run = False`
+This part of the code first sets that run = true then creates a while loop so while the robot is running for the readings coming out of the sensor if there is an obstacle that is within a tolerance of 3-units in range and 𝜋 in angles it stops. 
+
+As for this part of the code it's responsible for moving the robot
+
+       `else:
+            run = True 
+            while(run): 
+                goal_heading = atan2(
+                goal[1] - veh.x[1], 
+                goal[0] - veh.x[0])
+                steer = goal_heading - veh.x[2]
+                veh.step(1,steer)
+                if((abs(goal[0]-veh.x[0]) > 1) or (abs(goal[1]-veh.x[1]) > 1)):
+                    run=True
+                else:
+                    run = False`
+* The while loop is a continuous loop that only exits when the vehicle reaches the destination spot. 
+* Throughout the travel of the vehicle, the goal heading variable calculates the angle of the target with respect to the vehicle. 
+* As a result, the vehicle's required steering angle will alter. 
+* All that remains is to ensure that the vehicle stops when it reaches the target point by keeping the linear velocity constant and computing the steer angle as described previously.
+* The run flag is set to True, and the programme continues to execute, if the absolute difference between the vehicle's x-y coordinates and the target location does not exceed a preset tolerance, in this case 0.05. 
+* Otherwise, the loop exists and the run flag is set to False.
+* The run flag is set to True, and the programme continues to execute, if the absolute difference between the vehicle's x-y coordinates and the target location does     not exceed a preset tolerance, in this case 0.05. 
+* Otherwise, the loop exists and the run flag is set to False.
+
+
+
 ## flowchart 
 
 # Discussing results 
 ## Screenshots 
 
 # Areas for innovation 
+
+1. Strengthen the part of the code that is responsible for avoiding the obstacles 
+2. Try to do the same task in a shorter code 
+3. Using functions then recalling them
+4. Using a code to make the obstacles and the target move so that the robot can detect their movement and move accordingly
 
