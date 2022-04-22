@@ -22,9 +22,27 @@ In this part we are focusing just on the code's functionality and breaking the c
 
 and many more to be explained below
 ## code explanation part by part 
-import these first to start programming   `from roboticstoolbox import Bicycle, RandomPath, VehicleIcon,RangeBearingSensor,LandmarkMap
+import these first to start programming  
+
+`from roboticstoolbox import Bicycle, RandomPath, VehicleIcon,RangeBearingSensor,LandmarkMap
 from math import pi ,atan2
 import matplotlib.pyplot as plt` 
+
+Taking user input for initial position 
+
+`x = eval(input("Enter the x coordinated of initial position : "))
+y = eval(input("Enter the y coordinated of initial position : "))`
+
+
+Taking user input for target
+
+`x1 = eval(input("Enter the x coordinated of target position : "))
+y1 = eval(input("Enter the y coordinated of target position : "))`
+
+
+Taking user input for number of obstacles
+
+`n = int(input("Enter the number of obstacles : "))`
 
 `veh = Bicycle(
 )` creates an object for your vehicle it takes information about the vehicle 
