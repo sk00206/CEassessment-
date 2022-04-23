@@ -43,3 +43,14 @@ sensor=RangeBearingSensor(robot=veh, map= map ,animate=True)
 
 #printing sensor readings 
 print('Sensor readings: \n ' , sensor.h(veh.x))
+
+#robot stops when close to landmark
+
+distances = [i[0] for i in sensor.h(veh.x)]
+angles = [i[1] for i in sensor.h(veh.x)]
+run = True
+while(run):
+    for i in sensor.h(veh.x):
+        if i[0] < 3 :
+            if abs(i[1]<pi):
+                run = False
