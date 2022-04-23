@@ -40,3 +40,6 @@ map.plot()
 
 #adding sensor
 sensor=RangeBearingSensor(robot=veh, map= map ,animate=True)
+
+#printing sensor readings 
+print('Sensor readings: \n ' , sensor.h(veh.x))
