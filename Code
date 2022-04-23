@@ -66,3 +66,7 @@ while(run):
                      run=True
                  else:
                      run = False
+                     
+                 veh._animation.update(veh.x)       
+                plt. pause(0.05)
+plt.pause(1000)
