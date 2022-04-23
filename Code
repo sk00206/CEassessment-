@@ -37,3 +37,6 @@ plt.plot(goal[0], goal[1], **goal_marker_style)
 #loading the map with landmarks
 map = LandmarkMap (n, 10)
 map.plot()
+
+#adding sensor
+sensor=RangeBearingSensor(robot=veh, map= map ,animate=True)
