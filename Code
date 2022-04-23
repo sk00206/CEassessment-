@@ -54,3 +54,15 @@ while(run):
         if i[0] < 3 :
             if abs(i[1]<pi):
                 run = False
+        else:
+             run = True 
+             while(run): 
+                 goal_heading = atan2(
+                 goal[1] - veh.x[1], 
+                 goal[0] - veh.x[0])
+                 steer = goal_heading - veh.x[2]
+                 veh.step(1,steer)
+                 if((abs(goal[0]-veh.x[0]) > 1) or (abs(goal[1]-veh.x[1]) > 1)):
+                     run=True
+                 else:
+                     run = False
