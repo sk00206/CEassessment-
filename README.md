@@ -131,6 +131,11 @@ This is an image of the robot when it reached its target
 
 ![image](https://user-images.githubusercontent.com/99723032/164911521-493b426b-6657-4a44-82bd-375f8feb5821.png)
 
+This is an image of the expected output when the user runs the code 
+
+![image](https://user-images.githubusercontent.com/99723032/164911700-84a0cb55-50b4-4bad-8a85-2a630d8be0bc.png)
+
+
 # Areas for innovation 
 
 1. Strengthen the part of the code that is responsible for avoiding the obstacles 
