@@ -9,3 +9,6 @@ y = eval(input("Enter the y coordinated of initial position : "))
 #taking user input for target
 x1 = eval(input("Enter the x coordinated of target position : "))
 y1 = eval(input("Enter the y coordinated of target position : "))
+
+#taking user input for number of obstacles 
+n = int(input("Enter the number of obstacles : "))
