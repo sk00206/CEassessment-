@@ -119,6 +119,7 @@ As for this part of the code it's responsible for moving the robot
 
 # Discussing results 
 ## Screenshots 
+![image](https://user-images.githubusercontent.com/99183661/164906705-58a043c8-10b7-44fa-9d89-043a547bff70.png)
 
 # Areas for innovation 
 
