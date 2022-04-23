@@ -119,11 +119,17 @@ As for this part of the code it's responsible for moving the robot
 
 # Discussing results 
 ## Screenshots 
-this is an image of the map created with the robot only 
+This is an image of the map created with the robot only 
+
 ![image](https://user-images.githubusercontent.com/99183661/164906705-58a043c8-10b7-44fa-9d89-043a547bff70.png)
 
-this is an image of the map created with robot on its way to the target(the blue diamond) and surrounded by obstacles
+This is an image of the map created with robot on its way to the target(the blue diamond) and surrounded by obstacles
+
 ![image](https://user-images.githubusercontent.com/99723032/164911294-e30e43e4-c213-434d-a4f7-5ecefae019c4.png)
+
+This is an image of the robot when it reached its target
+
+![image](https://user-images.githubusercontent.com/99723032/164911521-493b426b-6657-4a44-82bd-375f8feb5821.png)
 
 # Areas for innovation 
 
