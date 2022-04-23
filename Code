@@ -22,3 +22,11 @@ veh = Bicycle(
  x0=( x,y ,0) ,#inital position 
  )
 veh.init(plot= True)
+
+#adding goal
+goal=[x1,y1];
+goal_marker_style = {
+ 'marker': 'D',
+ 'markersize': 3, 
+ 'color': 'b',
+}
