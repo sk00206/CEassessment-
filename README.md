@@ -117,6 +117,9 @@ As for this part of the code it's responsible for moving the robot
 
 ## flowchart 
 
+![Flowchart (1) (1)](https://user-images.githubusercontent.com/99723032/164917067-c7c5c6eb-a46e-48c7-8d31-e593ac83bc8d.png)
+
+
 # Discussing results 
 ## Screenshots 
 This is an image of the map created with the robot only 
