@@ -30,3 +30,6 @@ goal_marker_style = {
  'markersize': 3, 
  'color': 'b',
 }
+
+#plotting goal
+plt.plot(goal[0], goal[1], **goal_marker_style)
