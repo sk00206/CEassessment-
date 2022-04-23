@@ -142,4 +142,5 @@ This is an image of the expected output when the user runs the code
 2. Try to do the same task in a shorter code 
 3. Using functions then recalling them
 4. Using a code to make the obstacles and the target move so that the robot can detect their movement and move accordingly
+5. analyzing which route has the least obstacles and use it
 
