@@ -19,7 +19,16 @@ In this part we are focusing just on the code's functionality and breaking the c
 1. Input function `eval(input('enter text here))` to take input from user 
 2. `abs()`	Returns the absolute value of a number
 3. `eval()`	Evaluates and executes an expression
-
+## Libraries needed
+Libraries : 
+Math : pi / atan2 
+Matplotlib.pyppot : to plot the functions on a graph and it was imported as plt to be recalled easily 
+Robotics tool box: 
+-bicycle: to creat our robot as a bicycle because it moves in different direction bit is does not rotate around its axis 
+Randompath : to make the robot move ramdomly in a way it creates 
+VehicleIcon : to use an image to visualize our robot 
+Rangebearing sensor : to calculate the distance between the robot and obstacle  
+LandMarkMap: to add obstacles 
 and many more to be explained below
 ## code explanation part by part 
 import these first to start programming  
@@ -27,6 +36,8 @@ import these first to start programming
 `from roboticstoolbox import Bicycle, RandomPath, VehicleIcon,RangeBearingSensor,LandmarkMap
 from math import pi ,atan2
 import matplotlib.pyplot as plt` 
+
+
 
 Taking user input for initial position 
 
