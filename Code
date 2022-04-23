@@ -1,7 +1,11 @@
-`from roboticstoolbox import Bicycle, RandomPath, VehicleIcon,RangeBearingSensor,LandmarkMap
+from roboticstoolbox import Bicycle, RandomPath, VehicleIcon,RangeBearingSensor,LandmarkMap
 from math import pi ,atan2
-import matplotlib.pyplot as plt `
+import matplotlib.pyplot as plt 
 
 #taking user input for initial position 
 x = eval(input("Enter the x coordinated of initial position : "))
 y = eval(input("Enter the y coordinated of initial position : "))
+
+#taking user input for target
+x1 = eval(input("Enter the x coordinated of target position : "))
+y1 = eval(input("Enter the y coordinated of target position : "))
