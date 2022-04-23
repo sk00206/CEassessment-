@@ -12,3 +12,13 @@ y1 = eval(input("Enter the y coordinated of target position : "))
 
 #taking user input for number of obstacles 
 n = int(input("Enter the number of obstacles : "))
+
+#initializing the robot 
+anim = VehicleIcon('index.jpeg', scale = 1)
+veh = Bicycle(
+ animation = anim,
+ control = RandomPath, 
+ dim= 10 , #setting dimension of 10x10 grid centered at 0
+ x0=( x,y ,0) ,#inital position 
+ )
+veh.init(plot= True)
